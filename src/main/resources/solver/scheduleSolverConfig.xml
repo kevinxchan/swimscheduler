@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solver>
+    <!-- Domain model configuration -->
+    <scanAnnotatedClasses>
+        <packageInclude>swimscheduler.swimscheduler.domain</packageInclude>
+    </scanAnnotatedClasses>
+
+    <!-- Score configuration -->
+    <scoreDirectorFactory>
+        <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
+        <scoreDrl>swimscheduler.swimscheduler.solver.scheduleScoringRules.drl</scoreDrl>
+    </scoreDirectorFactory>
+
+    <!-- Optimization algorithms configuration -->
+    <termination>
+        <secondsSpentLimit>30</secondsSpentLimit>
+    </termination>
+    <constructionHeuristic>
+        <constructionHeuristicType>FIRST_FIT</constructionHeuristicType>
+    </constructionHeuristic>
+</solver>

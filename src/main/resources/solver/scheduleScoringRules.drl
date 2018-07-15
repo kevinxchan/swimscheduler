@@ -1,0 +1,12 @@
+package solver;
+dialect  "mvel"
+
+import domain.Volunteer
+import domain.Shift
+import domain.Student
+import domain.Schedule
+
+rule "scheduleScoringRules"
+    when
+    then
+end

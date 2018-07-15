@@ -41,7 +41,7 @@ public class Student {
         return name;
     }
 
-    @PlanningVariable(valueRangeProviderRefs = {"shiftStudentRange"})
+    @PlanningVariable(valueRangeProviderRefs = {"shiftRange"})
     public Shift getAssignedShift() {
         return assignedShift;
     }
